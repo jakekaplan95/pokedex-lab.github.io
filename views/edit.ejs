@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <h1>Update Pokemon</h1>
+    <form action="/pokemon/<%= index  %>? METHOD=PUT" method="POST">
+        Name: <input type="text" name="name" value="<%= pokemon.name %>" /><br>
+
+        Id: <input type="number" name="id" value="<%= pokemon.id %>" /> <br>
+
+        Type: <input type="text" name="type" value="<%= pokemon.type %>" /> <br>
+
+        HP: <input type="number" name="hp" value="<%= pokemon.stats.hp %>" /> <br>
+
+        Attack: <input type="number" name="attack" value="<%= pokemon.stats.attack %>" /> <br>
+
+        Defense: <input type="number" name="defense" value="<%= pokemon.stats.defense %>" /> <br>
+
+
+
+
+        <input type="submit" value="Update Pokemon"/>
+
+    </form>
+
+</body>
+</html>
