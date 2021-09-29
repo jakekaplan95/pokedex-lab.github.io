@@ -1,0 +1,44 @@
+`<html>
+    <body>
+
+        <h1> Pokemon</h1>
+        <nav>
+            <a href="/pokemon/new">Make your own Pokemon!</a>
+        </nav>
+        <ul>
+            <% for(let i = 0; i < pokemon.length; i++){ %>
+
+                <li>
+                    <a href="/pokemon/<%= i %>">
+                        <%= pokemon[i].name %>
+                    </a>
+
+                    <img src= <%= pokemon[i].img %> >
+
+
+                    <ul>
+                        Type:
+                        <%= pokemon[i].type %>
+                    </ul>
+
+                    <ul>
+                        HP:
+                        <%= pokemon[i].stats.hp %>
+                        Attack:
+                        <%= pokemon[i].stats.attack %>
+                        Defense:
+                        <%= pokemon[i].stats.defense %>
+                    </ul>
+
+
+                    <!-- <form action="/pokemon/<%= i %>?_method=DELETE" method="POST">
+                        <input type="submit" value="DELETE"/>
+                    </form> -->
+                    <a href="/pokemon/<%= i %>/edit">EDIT</a>
+                </li>
+
+            <% } %>
+        </ul>
+
+    </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "pokedex-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakekaplan95/pokedex-lab.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakekaplan95/pokedex-lab.github.io/issues"
+  },
+  "homepage": "https://github.com/jakekaplan95/pokedex-lab.github.io#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
